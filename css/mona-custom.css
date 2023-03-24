@@ -1,0 +1,355 @@
+body {
+    background: #e6e6e6;
+}
+
+.page-template-hcm .fair_info.st02 dl:before,
+.page-template-hcm .fair_info.st02 dl dd:before {
+    background: #48ABAC
+}
+
+.page-template-hcm .fair_info.st02 dl dt {
+    border-color: #48ABAC
+}
+
+.page-template-hcm #container h3 {
+    color: #48ABAC;
+    background-image: url(http://vietbabyfair.com.vn/template/images/spt_deco02.png)
+}
+
+.contact__form li {
+    margin-bottom: 10px;
+}
+
+.pagination-list li {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 14px;
+    background: #f9f9f9;
+    text-align: center;
+    color: #fff;
+    margin: 5px;
+    transition: all .2s ease-in-out;
+}
+
+.pagination-list li * {
+    line-height: inherit
+}
+
+.pagination-list li > a {
+    text-decoration: none;
+    color: #000;
+    transition: all .2s ease-in-out
+}
+
+.pagination-list li:hover {
+    background: #f5becc
+}
+
+.pagination-list li:hover > a {
+    color: #fff
+}
+
+.pagination-list li .page-numbers.current {
+    background: #dc2455;
+    padding: 8px 14px
+}
+
+a.page-numbers {
+    padding: 8px 14px
+}
+
+.pagination-list span.page-numbers.current.active > a {
+    color: #fff
+}
+
+.home #header .wrap {
+    display: none
+}
+
+input[type="radio"] {
+    left: 0;
+    top: 0;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    border: 1px solid #e1e1e1;
+    vertical-align: middle;
+}
+
+span.wpcf7-list-item {
+    display: inline-block;
+    margin: 0 1.5em 0 0;
+}
+
+.custom-checkbox.c2 span.wpcf7-list-item {
+    display: block;
+    margin: 0 0 1em 0;
+}
+
+.nav-tabs.sub04 a {
+    text-transform: uppercase
+}
+
+.nav-tabs.sub04 .current-menu-item a,
+.nav-tabs.sub04 .menu-item a:hover {
+    background: #dc2455;
+    color: #fff;
+    border-bottom: 2px solid #a92d46;
+}
+
+.custom-select {
+    color: #dc2455;
+    line-height: 40px;
+    height: 40px;
+    border: 0;
+    background-color: #f9f9f9;
+    outline: 0;
+    box-shadow: none;
+    height: 40px;
+    outline: 0;
+    box-shadow: none;
+    width: 100%;
+    padding-left: 8px;
+    padding-right: 20px;
+}
+
+.filter-letter li {
+    display: inline-block
+}
+
+.filter-letter li.active a {
+    background: #dc2455;
+    color: #fff;
+    background: linear-gradient(111.68464deg, #dc2455 4.93469%, #f76d92 97.82915%);
+}
+
+iframe#iframe-youtube {
+    width: 100%;
+    height: 100%
+}
+
+.fair_info dl dt {
+    line-height: 46px;
+}
+
+.fair_info dl dd {
+    background: #e6e6e6;
+}
+
+.fair_info.st02 dl:nth-child(even) dd {
+    background: #e6e6e6;
+}
+
+.events__list .last_eh_report li .event-badge a {
+    padding: 0;
+    line-height: initial;
+    height: initial;
+    min-height: initial;
+    background: unset;
+}
+
+.events__list .last_eh_report li .event-badge a:before {
+    display: none;
+}
+
+.filter-form .f-control {
+    background: #ebebeb;
+}
+
+.filter-form .search-control .f-control {
+    background: #ebebeb;
+}
+
+.custom-select {
+    background: #ebebeb;
+}
+
+.ex-head {
+    background: #fff;
+}
+
+.exhibitor-item {
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2);
+}
+
+.ex-img img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.ex-body .title {
+    color: #dc2455;
+    border-bottom: 2px solid #1aaaac;
+}
+
+.orga__wrap .ph_gallery li {
+    float: left;
+    width: 25%;
+}
+
+.popup-content ul li {
+    list-style-type: disc
+}
+
+.popup-content p i {
+    font-style: italic
+}
+
+.language-picker {
+    margin-right: 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+.language-picker .current-language {
+    display: block;
+    padding: 0 10px;
+    color: #dc2455;
+    margin-bottom: 5px;
+}
+
+.language-picker .current-language:after {
+    content: "\f107";
+    font-family: FontAwesome;
+    font-weight: 900;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    font-size: 13px;
+}
+
+.language-picker .sub-language {
+    position: absolute;
+    background-color: #fff;
+    top: 100%;
+    left: 0;
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+    -webkit-transform: perspective(1200px) rotateX(-90deg);
+    transform: perspective(1200px) rotateX(-90deg);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.language-picker .sub-language a {
+    display: block;
+    padding: 5px 10px;
+    border-top: 1px solid #f0f0f0;
+}
+
+.language-picker .language-list {
+    color: #eb058c;
+    position: relative;
+}
+
+.language-picker .language-list:hover .sub-language {
+    -webkit-transform: none;
+    transform: none;
+}
+
+#gnb > ul > li > ul > li > a {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+    .orga__wrap .ph_gallery {
+        margin: 0px 10px 5px;
+    }
+
+    .orga__wrap .ph_gallery li,
+    .page-template-summary .ph_gallery li {
+        float: left;
+        width: 50%;
+    }
+}
+
+@media (min-width: 768px) {
+    .brochure__wrap .col-md-5,
+    .brochure__wrap .col-md-7 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+.brochure__wrap p {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+@media (min-width: 992px) {
+    .col-lg-3 {
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+}
+
+#gnb ul li.menu-item:nth-child(5) a:after {
+    /*display : none*/
+}
+
+.sweet-alert {
+    width: 500px;
+}
+
+.page-template-success #container .wrap {
+    padding: 60px 60px 300px;
+}
+
+.m_board {
+    height: 410px;
+}
+
+.sub-language {
+    z-index: 999999
+}
+
+#tm {
+    z-index: 99999
+}
+
+.page-template-event-connect .mona-content table td {
+    border: none;
+    vertical-align: initial;
+}
+
+.page-template-event-connect .mona-content li {
+    list-style: disc
+}
+
+@media (min-width: 768px) {
+    .page-template-exhibitor .col-md-6 {
+        max-width: calc(100% / 3);
+    }
+
+    .page-template-exhibitor .col-md-6.hafl {
+        max-width: 50%;
+    }
+}
+
+.mona-check-wrap {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.mona-check-wrap .wpcf7-not-valid {
+    color: red;
+}
+
+.mona-check-wrap [role="alert"] {
+    display: none !important
+}
+
+.h-head .m_img {
+    margin-top: 0;
+}
