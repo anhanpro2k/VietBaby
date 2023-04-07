@@ -31,8 +31,6 @@ if ( class_exists( 'Kirki' ) ) {
 		'priority'   => $priority ++,
 		'capability' => 'edit_theme_options',
 	) );
-
-
 	/**
 	 * Add fields
 	 */
@@ -68,7 +66,7 @@ if ( class_exists( 'Kirki' ) ) {
 		'default'     => '',
 		'priority'    => $priority ++,
 	) );
-// Social Tab    
+
 	Kirki::add_field( 'mona_setting', array(
 		'type'        => 'text',
 		'settings'    => 'mona_sticky_header_facebook',
@@ -79,16 +77,42 @@ if ( class_exists( 'Kirki' ) ) {
 		'default'     => '',
 		'priority'    => $priority ++,
 	) );
+
+	// Social Tab
 	Kirki::add_field( 'mona_setting', array(
 		'type'        => 'text',
-		'settings'    => 'mona_sticky_header_website',
-		'label'       => esc_attr__( 'Website', 'monamedia' ),
+		'settings'    => 'mona_sticky_header_tiktok',
+		'label'       => esc_attr__( 'Tiktok', 'monamedia' ),
 		'description' => esc_attr__( '', 'monamedia' ),
-		'help'        => esc_attr__( 'Enter your Website', 'monamedia' ),
+		'help'        => esc_attr__( 'Enter your Tiktok Link', 'monamedia' ),
 		'section'     => 'social',
 		'default'     => '',
 		'priority'    => $priority ++,
 	) );
+
+
+	Kirki::add_field( 'mona_setting', array(
+		'type'        => 'text',
+		'settings'    => 'mona_sticky_header_instagram',
+		'label'       => esc_attr__( 'Instagram', 'monamedia' ),
+		'description' => esc_attr__( '', 'monamedia' ),
+		'help'        => esc_attr__( 'Enter your Instagram Link', 'monamedia' ),
+		'section'     => 'social',
+		'default'     => '',
+		'priority'    => $priority ++,
+	) );
+
+	Kirki::add_field( 'mona_setting', array(
+		'type'        => 'text',
+		'settings'    => 'mona_sticky_header_youtube',
+		'label'       => esc_attr__( 'Youtube', 'monamedia' ),
+		'description' => esc_attr__( '', 'monamedia' ),
+		'help'        => esc_attr__( 'Enter your Youtube Link', 'monamedia' ),
+		'section'     => 'social',
+		'default'     => '',
+		'priority'    => $priority ++,
+	) );
+
 	Kirki::add_field( 'mona_setting', array(
 		'type'        => 'text',
 		'settings'    => 'mona_sticky_header_email',
@@ -99,12 +123,13 @@ if ( class_exists( 'Kirki' ) ) {
 		'default'     => '',
 		'priority'    => $priority ++,
 	) );
+
 	Kirki::add_field( 'mona_setting', array(
 		'type'        => 'text',
-		'settings'    => 'mona_sticky_header_youtube',
-		'label'       => esc_attr__( 'Youtube', 'monamedia' ),
+		'settings'    => 'mona_sticky_header_website',
+		'label'       => esc_attr__( 'Website', 'monamedia' ),
 		'description' => esc_attr__( '', 'monamedia' ),
-		'help'        => esc_attr__( 'Enter your Youtube Link', 'monamedia' ),
+		'help'        => esc_attr__( 'Enter your Website', 'monamedia' ),
 		'section'     => 'social',
 		'default'     => '',
 		'priority'    => $priority ++,

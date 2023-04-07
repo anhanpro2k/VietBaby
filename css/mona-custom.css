@@ -353,3 +353,64 @@ iframe#iframe-youtube {
 .h-head .m_img {
     margin-top: 0;
 }
+
+.summary.mona-content p {
+    line-height: 1.5rem;
+}
+
+.wrap #tm .social-link {
+    margin-right: 2rem;
+}
+
+.mona-reason .row .col-md-12 {
+    margin-bottom: 2rem;
+}
+
+.mona-reason .table-main table .img img {
+    max-width: 20rem;
+    width: unset;
+}
+
+
+.mona-reason .table-main table th {
+    vertical-align: middle;
+
+}
+
+.mona-reason .table-main table td {
+    vertical-align: middle;
+}
+
+.mona-reason .table-main table td {
+    line-height: 1.8rem;
+}
+
+.mona-reason .table-main table .detail {
+    font-size: 1.3rem;
+}
+
+.mona-reason .container-cust > .mona-content p {
+    line-height: 1.5rem;
+    margin: 1rem;
+}
+
+#main_contents {
+    padding: 1rem 0;
+}
+
+.h-result-img {
+    margin-bottom: 1rem;
+}
+
+#main_contents .h-customer {
+    margin-bottom: 1.8rem;
+
+}
+
+.hd-social .social-list .social-link {
+    margin: 0 1rem;
+}
+
+.exhi-catalog .cata-item-child .text-title::before {
+    display: none !important;
+}

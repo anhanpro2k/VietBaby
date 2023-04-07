@@ -17,9 +17,12 @@ require_once( get_template_directory() . '/includes/functions.php' );
 function mona_image_size() {
 	add_image_size( '700x300', 700, 300, true );
 	add_image_size( '1300x800', 1300, 800, true );
+	add_image_size( '1600x800', 1600, 800, false );
+	add_image_size( '800x800', 800, 800, false );
 
 
 	add_image_size( '340x226', 340, 226, true );
+	add_image_size( '350x250', 340, 226, false );
 	add_image_size( '370x180', 370, 180, true );
 	add_image_size( '100x100', 100, 100, true );
 	add_image_size( '830x400', 830, 400, true );

@@ -1,37 +1,31 @@
-<?php
-$lg = get_field( 'mona_index_logo', MONA_INDEX );
-?>
 <!--spon-->
-<div class="spon">
-    <!--wrap-->
-    <div class="wrap">
-        <!-- Swiper -->
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-				<?php
-				if ( is_array( $lg ) ) {
-					foreach ( $lg as $item ) {
-						?>
-                        <div class="swiper-slide">
-                            <a href="<?php echo $item['url'] ?>">
-								<?php
-								$image = $item['img'];
-								$size  = 'full';
-								echo wp_get_attachment_image( $image, $size );
-								?>
-                            </a>
-                        </div>
-						<?php
-					}
-				}
-				?>
-            </div>
-        </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-    </div>
-    <!--//wrap-->
-</div>
+<!--<div class="spon">-->
+<!--    <div class="wrap">-->
+<!--        <div class="swiper-container">-->
+<!--            <div class="swiper-wrapper">-->
+<!--				--><?php
+//				if ( is_array( $lg ) ) {
+//					foreach ( $lg as $item ) {
+//						?>
+<!--                        <div class="swiper-slide">-->
+<!--                            <a href="--><?php //echo $item['url'] ?><!--">-->
+<!--								--><?php
+//								$image = $item['img'];
+//								$size  = 'full';
+//								echo wp_get_attachment_image( $image, $size );
+//								?>
+<!--                            </a>-->
+<!--                        </div>-->
+<!--						--><?php
+//					}
+//				}
+//				?>
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="swiper-button-next"></div>-->
+<!--        <div class="swiper-button-prev"></div>-->
+<!--    </div>-->
+<!--</div>-->
 <!--//spon-->
 <?php
 if ( is_page( 13388 ) ) { ?>
@@ -85,29 +79,43 @@ if ( is_page( 13388 ) ) { ?>
 								?>
                             </div>
                             <div class="fter-contact">
-								<?php
-								$mona_footer_email = get_field( 'mona_footer_email' );
-								?>
-								<?php
-								if ( content_exists( $mona_footer_email ) ) {
-									?>
-                                    <div class="fter-subtitle"><?php echo $mona_footer_email['email_title']; ?></div>
-                                    <div class="fter-contact-links">
-										<?php
-										foreach ( $mona_footer_email['list_contact'] as $key_email => $item_email ) {
-											?>
-                                            <a href="<?php echo 'mailto:' . $item_email['link']; ?>"
-                                               class="fter-contact-link"
-                                            ><?php echo $item_email['label']; ?> - <?php echo $item_email['link']; ?></a
-                                            >
-											<?php
-										}
-										?>
-                                    </div>
-									<?php
-								}
-								?>
+                                <div class="fter-subtitle">Liên hệ</div>
+                                <div class="fter-contact-links">
+                                    <div class="fter-contact-title">Việt Nam: Ms. Khue</div>
+                                    <a href="tel:+84-901-534-565" class="fter-contact-link">Tel: +84-901-534-565 </a>
+                                    <a href="mailto:minhkhue@coex.vn" class="fter-contact-link">Email:
+                                        minhkhue@coex.vn </a>
+                                    <div class="fter-contact-title">Hàn Quốc: Ms. Sunny</div>
+                                    <a href="tel:+82 10 5126 6059" class="fter-contact-link">Tel: +82 10 5126 6059 </a>
+                                    <a href="mailto:overseas.segefairs@gmail.com" class="fter-contact-link">Email:
+                                        overseas.segefairs@gmail.com </a>
+
+                                </div>
                             </div>
+                            <!--                            <div class="fter-contact">-->
+                            <!--								--><?php
+//								$mona_footer_email = get_field( 'mona_footer_email' );
+//								?>
+                            <!--								--><?php
+//								if ( content_exists( $mona_footer_email ) ) {
+//									?>
+                            <!--                                    <div class="fter-subtitle">--><?php //echo $mona_footer_email['email_title']; ?><!--</div>-->
+                            <!--                                    <div class="fter-contact-links">-->
+                            <!--										--><?php
+//										foreach ( $mona_footer_email['list_contact'] as $key_email => $item_email ) {
+//											?>
+                            <!--                                            <a href="--><?php //echo 'mailto:' . $item_email['link']; ?><!--"-->
+                            <!--                                               class="fter-contact-link"-->
+                            <!--                                            >--><?php //echo $item_email['label']; ?><!-- - --><?php //echo $item_email['link']; ?><!--</a-->
+                            <!--                                            >-->
+                            <!--											--><?php
+//										}
+//										?>
+                            <!--                                    </div>-->
+                            <!--									--><?php
+//								}
+//								?>
+                            <!--                            </div>-->
 							<?php
 						}
 						?>

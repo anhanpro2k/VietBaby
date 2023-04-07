@@ -21,15 +21,31 @@ while ( have_posts() ):
 					if ( content_exists( $mona_home_section_banner ) ) {
 						?>
                         <div class="bner">
-                            <div class="bner-bg">
-								<?php
-								if ( ! empty( $mona_home_section_banner['banner_image'] ) ) {
-									?>
-									<?php echo wp_get_attachment_image( $mona_home_section_banner['banner_image'], '1300x800', '', [ 'class' => '' ] ); ?>
-									<?php
-								}
+							<?php
+							if ( ! wp_is_mobile() ) {
 								?>
-                            </div>
+                                <div class="bner-bg">
+									<?php
+									if ( ! empty( $mona_home_section_banner['banner_image'] ) ) {
+										?>
+										<?php echo wp_get_attachment_image( $mona_home_section_banner['banner_image'], '1600x800', '', [ 'class' => '' ] ); ?>
+										<?php
+									}
+									?>
+                                </div>
+								<?php
+							} else { ?>
+                                <div class="bner-bg mona-bg-mobile">
+									<?php
+									if ( ! empty( $mona_home_section_banner['banner_image'] ) ) {
+										?>
+										<?php echo wp_get_attachment_image( $mona_home_section_banner['banner_image_mobile'], '800x800', '', [ 'class' => '' ] ); ?>
+										<?php
+									}
+									?>
+                                </div>
+								<?php
+							} ?>
 							<?php
 							if ( content_exists( $mona_home_section_banner['banner_list_button'] ) ) {
 								?>
@@ -261,6 +277,49 @@ while ( have_posts() ):
                                 <div class="swiper-wrapper">
 									<?php
 									foreach ( $mona_home_section_customer as $key_customer => $item_customer ) {
+										?>
+                                        <div class="swiper-slide">
+                                            <div class="h-customer-image">
+                                                <a target="_blank" href="<?php echo $item_customer['link']['url']; ?>">
+													<?php echo wp_get_attachment_image( $item_customer['logo'], 'full', '', [ 'class' => '' ] ); ?>
+                                                </a>
+                                            </div>
+                                        </div>
+										<?php
+									}
+									?>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+					<?php
+				}
+				?>
+
+				<?php
+				$mona_home_section_oganizer = get_field( 'mona_home_section_oganizer' );
+				?>
+				<?php
+				if ( content_exists( $mona_home_section_oganizer ) ) {
+					?>
+                    <div class="h-customer">
+						<?php
+						$mona_home_section_oganizer_title = get_field( 'mona_home_section_oganizer_title' );
+						?>
+						<?php
+						if ( ! empty( $mona_home_section_oganizer_title ) ) {
+							?>
+                            <div class="h-news-slider-title">
+                                <div class="title-inner"><?php echo $mona_home_section_oganizer_title; ?></div>
+                            </div>
+							<?php
+						}
+						?>
+                        <div class="h-customer-slider">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+									<?php
+									foreach ( $mona_home_section_oganizer as $key_customer => $item_customer ) {
 										?>
                                         <div class="swiper-slide">
                                             <div class="h-customer-image">
